@@ -1,0 +1,17 @@
+[实验名称] FreeRTOS多任务实验
+[功能目标] 使用 FreeRTOS 实现三个周期任务的协同运行：
+  1. 创建按键扫描、LED 闪烁和系统计时 3 个 FreeRTOS 任务，由 FreeRTOS 调度器统一管理任务运行；
+  2. 按键扫描任务：每隔 10 ms 读取一次用户按键 B1，通过连续采样实现消抖，每次有效按下使按键次数加 1，持续按住期间不重复计数；
+  3. LED 闪烁任务：每隔 500 ms 翻转一次 LD2；
+  4. 系统计时任务：每隔 1000 ms 将累计运行秒数加 1，用于记录程序启动后的运行时间；
+  5. 三个任务分别在各自的任务函数中循环运行，通过 FreeRTOS 延时机制控制执行周期，任务等待期间调度器会运行其他就绪任务，不使用 HAL_Delay() 等阻塞式等待。
+[开发板和 MCU 型号] NUCLEO-G431RB 开发板和 STM32G431RBT6 MCU。
+
+[Experiment Name] FreeRTOS Multitasking Experiment
+[Objectives] Use FreeRTOS to implement cooperative operation of three periodic tasks:
+  1. Create three FreeRTOS tasks: button scanning, LED blinking, and system timing, all managed by the FreeRTOS scheduler;
+  2. Button Scanning Task: Read user button B1 every 10 ms, implement debouncing through continuous sampling, increment the button press count on each valid press, and avoid repeated counting while the button is held down;
+  3. LED Blinking Task: Toggle LD2 every 500 ms;
+  4. System Timing Task: Increment the cumulative running seconds every 1000 ms to record the running time since program startup;
+  5. The three tasks run cyclically in their respective task functions, with execution periods controlled by the FreeRTOS delay mechanism. While a task is waiting, the scheduler runs other ready tasks. Blocking waits such as HAL_Delay() are not used.
+[Board and MCU] NUCLEO-G431RB development board and STM32G431RBT6 MCU.

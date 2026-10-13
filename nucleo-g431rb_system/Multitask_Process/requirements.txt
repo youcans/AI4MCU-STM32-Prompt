@@ -1,0 +1,15 @@
+[实验名称] 主循环多任务处理实验
+[功能目标] 在主循环中实现三个周期任务的协同运行：
+  1. 按键扫描任务：每隔 10ms 读取一次用户按键 B1，通过连续采样完成非阻塞消抖，每次有效按下使按键次数加 1，持续按住期间不重复计数；
+  2. LED 闪烁任务：每隔 500ms 翻转一次 LD2；
+  3. 系统计时任务：每隔 1000ms 将累计运行秒数加 1，记录程序启动后的运行时间；
+  4. 三个任务在主循环中依次调用，分别使用 HAL_GetTick() 管理执行周期，不使用阻塞式等待。
+[开发板和 MCU 型号] NUCLEO-G431RB 开发板和 STM32G431RBT6 MCU。
+
+[Experiment Name] Main Loop Multitasking Experiment
+[Objectives] Implement cooperative operation of three periodic tasks in the main loop:
+  1. Button Scanning Task: Read user button B1 every 10 ms, perform non-blocking debouncing through continuous sampling, increment the button press count on each valid press, and avoid repeated counting while the button is held down;
+  2. LED Blinking Task: Toggle LD2 every 500 ms;
+  3. System Timing Task: Increment the cumulative running seconds every 1000 ms to record the running time since program startup;
+  4. The three tasks are called sequentially in the main loop, each using HAL_GetTick() to manage its execution period, without blocking waits.
+[Board and MCU] NUCLEO-G431RB development board and STM32G431RBT6 MCU.

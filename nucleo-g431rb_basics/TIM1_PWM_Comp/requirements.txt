@@ -1,0 +1,7 @@
+[实验名称] TIM1 互补 PWM 输出实验
+[功能目标] 使用 STM32G431RBT6 的 高级定时器 TIM1 的 CH1/CH1N通道，通过 PA8 和 PB13 输出频率为 10kHz、占空比为 50%、死区时间约为 500ns 的互补 PWM 信号。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] TIM1 Complementary PWM Output Experiment
+[Objective] Use channels CH1/CH1N of the advanced timer TIM1 on the STM32G431RBT6 to output complementary PWM signals through PA8 and PB13, with a frequency of 10 kHz, a duty cycle of 50%, and a dead time of approximately 500 ns.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

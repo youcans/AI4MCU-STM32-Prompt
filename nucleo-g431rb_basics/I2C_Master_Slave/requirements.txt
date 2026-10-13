@@ -1,0 +1,7 @@
+[实验名称] I2C 主从通信实验
+[功能目标] 使用 I2C1 作为主机、I2C3 作为从机。启动后先使 I2C3 进入接收状态，再由 I2C1 自动发送一组固定测试数据；I2C3 接收后将原数据返回给 I2C1，I2C1 接收并比较发送数据与返回数据，从而完成一次 I2C 主从通信验证。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] I2C Master-Slave Communication Experiment
+[Objective] Use I2C1 as the master and I2C3 as the slave. After startup, first put I2C3 into the receive state, then have I2C1 automatically send a set of fixed test data; after receiving it, I2C3 returns the original data to I2C1, and I2C1 receives and compares the sent data with the returned data, thereby completing a verification of I2C master-slave communication.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

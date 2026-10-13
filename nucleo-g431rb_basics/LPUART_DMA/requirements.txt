@@ -1,0 +1,7 @@
+[实验名称] LPUART DMA通信实验
+[功能目标] 使用 LPUART1 通过板载虚拟串口，以 DMA 方式连续发送 JustFloat 格式的锯齿波数据，并在 VOFA+ 中显示波形。数据格式以 vofa_justfloat.md 为准。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] LPUART DMA Communication Experiment
+[Objective] Use LPUART1 via the onboard virtual COM port to continuously send sawtooth wave data in JustFloat format through DMA, and display the waveform in VOFA+. The data format follows vofa_justfloat.md.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

@@ -1,0 +1,17 @@
+[实验名称] Flash 参数存储实验
+[功能目标] 使用 STM32G431RBT6 内部 Flash 保存 LED 闪烁次数参数：
+1. 程序启动时读取参数，无有效参数时采用默认值 1。
+2. 每次按下用户按键（PC13），参数值在 1～5 之间循环递增，并将新值写入 Flash。
+3. 控制板载 LED（PA5）按照参数值闪烁相应次数。
+4.系统复位后重新读取并显示已保存的参数。
+5. 参数存储地址为 0x0801F800。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] Flash Parameter Storage Experiment
+[Objective] Use the STM32G431RBT6's internal Flash to store the LED blink count parameter:
+1. Read the parameter at program startup; if no valid parameter exists, use the default value of 1.
+2. Each time the user button (PC13) is pressed, increment the parameter cyclically between 1 and 5, and write the new value to Flash.
+3. Make the onboard LED (PA5) blink the corresponding number of times according to the parameter value.
+4. After a system reset, re-read and display the saved parameter.
+5. The parameter storage address is 0x0801F800.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

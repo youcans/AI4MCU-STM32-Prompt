@@ -1,0 +1,7 @@
+[实验名称] SPI 主从通信实验
+[功能目标] 使用 SPI1 作为主机、SPI2 作为从机，实现 SPI 主从通信。SPI1 发送固定测试数据，SPI2 接收后再回传，SPI1 接收并比较回传数据，以验证 SPI 双向通信功能。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] SPI Master-Slave Communication Experiment
+[Objective] Use SPI1 as the master and SPI2 as the slave to implement SPI master-slave communication. SPI1 sends fixed test data, SPI2 receives it and sends it back, and SPI1 receives and compares the returned data to verify the SPI bidirectional communication function.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

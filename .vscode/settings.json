@@ -1,0 +1,6 @@
+{
+    "cmake.enable": false,
+    "stm32cube-ide-core.disableSTM32CubeProjectDetection": true,
+    "cmake.configureOnOpen": false,
+    "cmake.ignoreCMakeListsMissing": true
+}

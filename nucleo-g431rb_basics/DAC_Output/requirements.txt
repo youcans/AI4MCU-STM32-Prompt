@@ -1,0 +1,7 @@
+[实验名称] DAC 模拟量信号输出
+[功能目标] 使用 STM32G431RBT6 的 DAC1 通道1 经 PA4 引脚输出模拟电压：先输出固定直流电压，随后周期性更新 DAC 转换值以生成锯齿波，并通过 PA5 引脚指示锯齿波的输出周期。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU
+
+[Experiment Name] DAC Analog Signal Output
+[Objective] Use DAC1 Channel-1 of the STM32G431RBT6 to output an analog voltage via the PA4 pin. Firstly, output a fixed DC voltage; then periodically update the DAC conversion value to generate a sawtooth wave. The PA5 pin is used to indicate the output period of the sawtooth wave.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

@@ -1,0 +1,7 @@
+[实验名称] 定时器周期中断实验
+[功能目标] 使用 STM32G431RBT6 的 TIM6 实现板载 LED（PA5）周期性闪烁，LED 每 500ms 切换一次状态。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] Timer Periodic Interrupt Experiment
+[Objective] Use TIM6 of the STM32G431RBT6 to make the onboard LED (PA5) blink periodically, toggling its state every 500 ms.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

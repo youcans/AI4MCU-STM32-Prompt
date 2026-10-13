@@ -1,0 +1,19 @@
+[实验名称] 独立看门狗复位实验
+[功能目标] 
+1. 程序启动时识别复位来源。如果检测到 IWDG 复位，板载 LED（PA5） 以 10Hz 的频率快速闪烁 3 秒；如果未检测到 IWDG 复位，LED 以 1Hz 的频率缓慢闪烁 3 秒。状态显示结束后，LED 保持常亮。
+2. 复位来源显示结束后启动独立看门狗 IWDG，标称超时时间设置为约 250ms。
+3. 程序正常运行时，每 50ms 刷新一次 IWDG，避免触发看门狗复位。
+4. 按下用户按键（PC13）后，使 LED 熄灭并停止刷新 IWDG，以模拟程序阻塞。
+5. IWDG 超时后触发系统复位。程序重新启动后，应识别出本次 IWDG 复位，并在状态显示结束后恢复正常运行。
+6. 实验不使用串口和通用定时器，主要使用 RCC 复位标志、GPIO、IWDG 和 HAL 系统节拍实现。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] Independent Watchdog Reset Experiment
+[Objective]
+1. Identify the reset source at program startup. If an IWDG reset is detected, the onboard LED (PA5) blinks rapidly at 10 Hz for 3 seconds; if no IWDG reset is detected, the LED blinks slowly at 1 Hz for 3 seconds. After the status indication ends, the LED remains steadily on.
+2. After the reset source indication ends, start the independent watchdog IWDG with a nominal timeout set to approximately 250 ms.
+3. During normal program operation, refresh the IWDG every 50 ms to avoid triggering a watchdog reset.
+4. After the user button (PC13) is pressed, turn off the LED and stop refreshing the IWDG to simulate a program hang.
+5. When the IWDG times out, a system reset is triggered. After the program restarts, it should recognize this IWDG reset and resume normal operation after the status indication ends.
+6. The experiment does not use the serial port or general-purpose timers, and mainly uses RCC reset flags, GPIO, IWDG, and the HAL system tick.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

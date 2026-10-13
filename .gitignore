@@ -1,0 +1,44 @@
+# 编译输出（任意层级）
+**/Debug/
+**/Release/
+**/*.o
+**/*.d
+**/*.elf
+**/*.hex
+**/*.bin
+**/*.map
+**/*.lst
+**/*.crf
+**/*.dep
+
+# IDE 个人配置文件
+**/*.uvguix.*
+**/*.uvoptx
+**/*.scvd
+**/*.launch
+**/.settings/
+**/.project
+**/.cproject
+
+# CubeMX 临时文件（.ioc 本体必须保留）
+**/.mxproject
+**/STM32CubeMX/
+
+# 系统临时文件
+Thumbs.db
+*.tmp
+*.log
+
+# CubeMX 生成的 CMakeLists.txt（所有层级，不提交）
+**/CMakeLists.txt
+
+# Claude Code 本地缓存（所有层级，不提交）
+**/.claude/
+
+# VS Code 本地配置文件（保留 settings.json，忽略含本地路径的文件）
+**/.vscode/c_cpp_properties.json
+**/.vscode/launch.json
+
+# nucleo-g431rb_completed: 目录保留，内容暂不提交
+nucleo-g431rb_completed/**
+!nucleo-g431rb_completed/.gitkeep

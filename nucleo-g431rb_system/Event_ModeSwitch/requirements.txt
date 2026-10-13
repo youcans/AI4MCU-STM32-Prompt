@@ -1,0 +1,16 @@
+[实验名称] 事件驱动与运行模式切换
+[功能目标] 实现事件驱动与运行模式切换：
+  1. 检测用户按键 B1，对按键输入进行消抖处理，并在每次有效按下时生成按键事件；
+  2. 根据按键事件，使运行模式按“停止 → 慢速闪烁 → 快速闪烁 → 停止”的顺序循环切换；
+  3. 根据当前运行模式控制 LD2：停止模式下保持熄灭，慢速闪烁模式下每 500ms 翻转一次，快速闪烁模式下每 100ms 翻转一次；
+  4. 每隔 1000ms 更新一次累计运行秒数。
+[开发板与 MCU 型号] NUCLEO-G431RB 开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] Event-Driven and Operation Mode Switching
+[Objectives] Implement event-driven and operation mode switching:
+  1. Detect user button B1, debounce the button input, and generate a button event on each valid press;
+  2. Based on the button events, cycle the operation mode in the order "Stop → Slow Blink → Fast Blink → Stop";
+  3. Control LD2 according to the current operation mode: remain off in Stop mode, toggle every 500 ms in Slow Blink mode, and toggle every 100 ms in Fast Blink mode;
+  4. Update the cumulative running seconds every 1000 ms.
+[Board and MCU] NUCLEO-G431RB development board, equipped with STM32G431RBT6 MCU.
+

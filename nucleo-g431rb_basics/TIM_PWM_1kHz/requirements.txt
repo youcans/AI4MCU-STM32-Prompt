@@ -1,0 +1,7 @@
+[实验名称] 定时器 PWM 输出实验
+[功能目标] 使用 STM32G431RBT6 的 TIM2通道1 输出 PWM 信号驱动板载 LED（PA5），PWM 频率约为 1kHz；占空比在 10%-90% 之间周期性往复变化，周期约为 2s，实现呼吸灯效果。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] Timer PWM Output Experiment
+[Objective] Use TIM2 Channel 1 of the STM32G431RBT6 to output a PWM signal to drive the onboard LED (PA5). The PWM frequency is approximately 1 kHz; the duty cycle varies periodically back and forth between 10% and 90%, with a period of approximately 2 s, achieving a breathing LED effect.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

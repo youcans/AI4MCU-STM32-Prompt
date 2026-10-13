@@ -1,0 +1,7 @@
+[实验名称] USART数据收发回显实验
+[功能目标] 使用 USART1 实现 STM32 与计算机之间的 UART 数据通信，通过中断方式接收字符串并以轮询方式回传，实现串口回显功能。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] USART Data Transmit/Receive Echo Experiment
+[Objective] Use USART1 to implement UART data communication between the STM32 and a computer, receiving strings via interrupts and echoing them back via polling, thereby achieving a serial echo function.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

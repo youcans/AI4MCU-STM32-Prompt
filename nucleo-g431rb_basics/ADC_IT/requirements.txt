@@ -1,0 +1,7 @@
+[实验名称] ADC 模拟量数据采集
+[功能目标] 使用 STM32G431RBT6 的 ADC1 通道2 采集 PA1 引脚输入的模拟电压，采用软件触发与转换完成中断方式，每 100ms 启动一次 ADC 采集，读取 12位 ADC 原始值并换算为输入电压。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU
+
+[Experiment Name] ADC Analog Data Acquisition
+[Objective] Use ADC1 Channel 2 of STM32G431RBT6 to sample the analog voltage input at pin PA1. Software trigger and end‑of‑conversion interrupt are adopted. Start one ADC acquisition every 100 ms, read the 12‑bit raw ADC value, and convert it into the input voltage.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.

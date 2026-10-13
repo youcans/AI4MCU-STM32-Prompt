@@ -1,0 +1,14 @@
+[实验名称] RTC 日历与闹钟实验
+[功能目标]
+1. 以 LSE 作为 RTC 时钟源，每 1s 读取一次日期和时间。
+2. 通过备份寄存器保存 RTC 初始化标志，使普通系统复位后日期和时间不返回初始值。
+3. 将 Alarm A 设置为每分钟第 10s 触发，闹钟发生后控制板载 LED（PA5）快速闪烁 3s。
+[开发板和MCU型号] NUCLEO-G431RB开发板，搭载 STM32G431RBT6 MCU。
+
+[Experiment Name] RTC Calendar and Alarm Experiment
+[Objective]
+1. Use LSE as the RTC clock source and read the date and time once every 1 s.
+2. Save the RTC initialization flag in a backup register so that the date and time do not return to their initial values after an ordinary system reset.
+3. Set Alarm A to trigger at the 10th second of every minute; after the alarm occurs, make the onboard LED (PA5) blink rapidly for 3 s.
+[Board and MCU] NUCLEO-G431RB development board, equipped with the STM32G431RBT6 MCU.
+
