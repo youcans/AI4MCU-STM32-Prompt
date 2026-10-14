@@ -40,5 +40,13 @@ Thumbs.db
 **/.vscode/launch.json
 
 # nucleo-g431rb_completed: 目录保留，内容暂不提交
-nucleo-g431rb_completed/**
+nucleo-g431rb_completed/*
 !nucleo-g431rb_completed/.gitkeep
+
+# nucleo-g431rb_completed: 已发布的参考项目
+!nucleo-g431rb_completed/GPIO_EXTI/
+!nucleo-g431rb_completed/GPIO_IOToggle/
+!nucleo-g431rb_completed/GPIO_BUTTON/
+!nucleo-g431rb_completed/TIM_IT_500ms/
+!nucleo-g431rb_completed/TIM_PWM_1kHz/
+!nucleo-g431rb_completed/ADC_IT/
