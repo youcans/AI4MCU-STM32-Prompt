@@ -1,0 +1,7 @@
+[实验名称] GPIO输出翻转实验（LED闪烁）
+[功能目标] 使用 STM32C542RCT6 的 PA5 引脚，每隔 500 ms 切换一次板载 LED 的状态，实现 LED 闪烁。
+[开发板和MCU型号] NUCLEO-C542RC 开发板，搭载 STM32C542RCT6 MCU。
+
+[Experiment Name] GPIO Output Toggle Experiment (LED Blinking)
+[Objective] Use the PA5 pin of the STM32C542RCT6 to toggle the state of the onboard LED every 500 ms, achieving LED blinking.
+[Board and MCU] NUCLEO-C542RC development board, equipped with the STM32C542RCT6 MCU.

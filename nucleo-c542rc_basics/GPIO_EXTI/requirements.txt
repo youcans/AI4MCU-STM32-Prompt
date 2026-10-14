@@ -1,0 +1,7 @@
+[实验名称] GPIO外部中断实验
+[功能目标] 按下用户按键（PC13）时触发外部中断，并切换板载 LED（PA5）状态。消抖时间 20ms。
+[开发板和MCU型号] NUCLEO-C542RC 开发板，搭载 STM32C542RCT6 MCU。
+
+[Experiment Name] GPIO External Interrupt Experiment
+[Functional Objective] Toggle the onboard LED (PA5) via an external interrupt triggered by pressing the user button (PC13), with a 20 ms debounce time.
+[Board and MCU] NUCLEO-C542RC development board, equipped with theSTM32C542RCT6 MCU.
