@@ -50,3 +50,7 @@ nucleo-g431rb_completed/*
 !nucleo-g431rb_completed/TIM_IT_500ms/
 !nucleo-g431rb_completed/TIM_PWM_1kHz/
 !nucleo-g431rb_completed/ADC_IT/
+
+# nucleo-c542rc_completed: 目录保留，内容暂不提交
+nucleo-c542rc_completed/*
+!nucleo-c542rc_completed/.gitkeep
